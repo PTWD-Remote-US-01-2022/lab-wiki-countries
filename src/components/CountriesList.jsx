@@ -1,8 +1,14 @@
 import { Link } from 'react-router-dom';
 
+const style = {
+  overflowY: 'scroll',
+  maxHeight: '80vh',
+  width: '40vw',
+};
+
 const CountriesList = ({ countries }) => {
   return (
-    <div>
+    <div style={style}>
       {countries.map((country) => {
         return (
           <div key={country._id}>
